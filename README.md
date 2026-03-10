@@ -8,7 +8,7 @@ Implements **AMP (Adversarial Motion Priors)** for simultaneous fall recovery, l
 
 ## Results — AMP Getup + Walk + PHUMA Style
 
-**Task**: `Atom01-AMP-Getup-Phuma-V3`  
+**Task**: `Atom01-AMP-Getup-Phuma-V3`
 Three behaviors trained jointly: fall recovery (52%) + walking (24%) + PHUMA style imitation (24%)
 
 | Metric | Value |
@@ -20,15 +20,21 @@ Three behaviors trained jointly: fall recovery (52%) + walking (24%) + PHUMA sty
 | Training hardware | NVIDIA RTX 3090 |
 | Training duration | ~17.5 hours |
 
+### Demo Video
+
+<video src="https://github.com/Kitjesen/axion-train/releases/download/v1.0.0/demo.mp4" controls width="100%"></video>
+
+▶ [Download demo.mp4](https://github.com/Kitjesen/axion-train/releases/download/v1.0.0/demo.mp4) — 64 robots, Getup+Walk+PHUMA style, model_24999.pt
+
 ### Training Curves
 
 ![Training Overview](docs/images/training_overview.png)
 
-*Mean reward converges to ~300 by ~10k iterations; episode length saturates to max (2500) within 5k iterations, meaning the robot stops falling entirely.*
+*Mean reward converges to ~300 by ~10k iterations; episode length saturates to max (2500) within 5k iterations — the robot stops falling entirely.*
 
 ![Style & Discriminator](docs/images/style_discriminator.png)
 
-*AMP discriminator loss converges; style reward stabilizes at ~0.88 indicating the robot's motion closely matches the PHUMA reference motion library.*
+*Discriminator loss converges to 0.11; style reward stabilizes at **0.881**, disc_demo_score reaches 0.784 (policy motions approach reference quality).*
 
 ![Reward Breakdown](docs/images/reward_breakdown.png)
 
