@@ -1,0 +1,30 @@
+# Large model checkpoints
+logs/
+outputs/
+*.pt
+*.onnx
+*.pkl
+*.npy
+
+# Motion data (large dataset)
+data/motions/
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Training logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Temp
+*.tmp
+.DS_Store
