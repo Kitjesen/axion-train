@@ -20,11 +20,11 @@ Three behaviors trained jointly: fall recovery (52%) + walking (24%) + PHUMA sty
 | Training hardware | NVIDIA RTX 3090 |
 | Training duration | ~17.5 hours |
 
-### Demo Video
+### Demo
 
-<video src="https://github.com/Kitjesen/axion-train/releases/download/v1.0.0/demo.mp4" controls width="100%"></video>
+![demo](docs/images/demo.gif)
 
-▶ [Download demo.mp4](https://github.com/Kitjesen/axion-train/releases/download/v1.0.0/demo.mp4) — 64 robots, Getup+Walk+PHUMA style, model_24999.pt
+▶ [Full video (MP4)](https://github.com/Kitjesen/axion-train/releases/download/v1.0.0/demo.mp4) — 64 robots, Getup+Walk+PHUMA style, model_24999.pt
 
 ### Training Curves
 
